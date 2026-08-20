@@ -62,22 +62,52 @@
         // ESTRUTURAS DE CONTROLE DE FLUXO // DECISOES!!!
         // 1. CONDICIONAIS - if é uma palavra reservada para a condicional SE
 
-    //    const name = window.prompt ("Digite seu Nome:");
+      //  const name = window.prompt ("Digite seu Nome:");
 
       //  if (name) {
-      //      window.alert(`Olá ${name}! Seja bem vindo ao Code Cash`);
-      //  } else {
-      //      window.alert (`Olá!`);
-      //  } 
-
-    //    if (name) {
-     //       window.alert (`Ola ${name}! Seja bem vindo ao Code Cash.`)
-     //   } else if (name === '') {
-     //       window.alert (`Olá`)
+     //       window.alert(`Olá ${name}! Seja bem vindo ao Code Cash`);
      //   } else {
-      //      window.alert (`Operação Cancelada`)
-    //    }
+     //     window.alert (`Olá!`);
+    //   } 
 
+    //   if (name) {
+     //       window.alert (`Ola ${name}! Seja bem vindo ao Code Cash.`)
+    //    } else if (name === '') {
+   //         window.alert (`Olá`)
+    //   } else {
+    //        window.alert (`Operação Cancelada`)
+    //   }
+//   parte com função da aula de 19/08 ----- 
+
+ //    function greet (name) {
+  //    if (name) {
+  //      alert (`Ola ${name}! Seja bem vindo ao Code Cash.`)
+  //    } else if (name === '') {
+   //     (`Ola Seja bem vindo ao Code Cash.`)
+   //   }
+
+    //  alert ('Operação cancelada')
+   //  }
+
+   //  greet (name)
+  /// ===================================================== 
+
+
+        //   function greet (name) {
+        //     const name = window.prompt ("Digite seu Nome:");
+
+        //   if (!isNaN (Number(name))) 
+        //     return alert ('Digite um valor válido.');
+        
+        //  }
+
+
+
+
+
+
+
+  // ==========================================================
    
     //    const age = window.prompt ("digite sua idade")
     //    if (age >= 60) {
@@ -150,18 +180,100 @@
         - se divisível por 2 e por 5, imprima "n - MARMENINO"
       */
 
-      for (let i = 1; i <= 100; i = i + 1) {
-        if (i % 2 === 0) {
-          if (i % 5 === 0) {
-            console.log(`${i} - MARMENINO`);
-          } else {
-            console.log(`${i} - MAR`);
-          }
-        } else if (i % 5 === 0) {
-          console.log(`${i} - MENINO`);
+      // for (let i = 1; i <= 100; i = i + 1) {
+      //   if (i % 2 === 0) {
+      //     if (i % 5 === 0) {
+      //       console.log(`${i} - MARMENINO`);
+      //     } else {
+      //       console.log(`${i} - MAR`);
+      //     }
+      //   } else if (i % 5 === 0) {
+      //     console.log(`${i} - MENINO`);
+      //   }
+      // }
+      
+// ------------------- AULA 19/08 --------------------------------
+// ------------------- FUNÇÕES  ----------------------------------
+
+ //    function greet (name) {window.alert (`hello, ${name}!`);};
+
+  //   greet ('alexandre');
+  //   greet ('de oliveira');
+  //   greet ('teves')
+
+     // -----------------------------------------
+
+    //  function sum (n1, n2) {alert (n1 + n2)}
+     
+    //  sum (5, 3)
+    //  sum (5, '3')
+    //  sum (11, 11)
+     
+     //-------------------------------------------
+
+    // const greet = 'hello'
+    // console.log (greet);
+
+    // crie uma funcao que recebe um numero e verifique se esse numero é par ou impar
+
+      //function parse(n) {
+      //  if (n <= 0) {
+       //   alert('Digite um valor maior que zero.');
+      //  } else if (n % 2 === 0) {
+       //   alert(`${n} é par.`);
+      //  } else {
+      //    alert(`${n} é ímpar.`);/
+      //  }
+     //}
+
+      // parse(10);
+
+        
+     // ============================================
+
+      // function create (name) {
+      //   const phrase = `Hello, ${name}!`;
+      //  return phrase;
+      // }
+
+      // alert (create ('Alexandre'));
+      
+      // ===========================================
+
+      // function parse (n) {
+      //  if (n % 2 === 0) {
+      //  alert (`${n} é par`);
+      //  return
+      //  }
+
+      //  alert (`${n} é impar.`);
+
+      //  parse (10)
+      // }
+
+      // ============================================
+
+
+function greet() {
+        const name = prompt('Digite seu nome:');
+
+        if (name === '') {
+          return alert(
+            'Olá! Seja bem vindo ao Code Cash.'
+          );      
+        } else if (name === null) {
+          return alert ('Operação cancelada.');
+        } else if (!isNaN(Number(name))) {
+          alert('Digite um valor válido.');
+          return greet();
         }
+        
+        alert(`Olá, ${name}! Seja bem vindo ao Code Cash.`);
       }
-          // teste
+
+      greet();
+
+
 
     </script>
 
