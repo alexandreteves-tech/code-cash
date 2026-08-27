@@ -1,178 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>code-cash</title>
     <script>
+      // console.log (2*2);
+      // console.log (typeof 2*2);
+      // console.log ('4'+'5'); //concatenar
+      // console.log (4+5);
 
-        // const name = 'Alexandre';      //string
-        // const age = 47;             // number
-        // const active = false;        // boolean
-        // const vote = null;          // object
-        // const contain = undefined; //undefined
+      // console.log ('Meu nome é ' + name + ' e tenho ' + age + ' anos.')
+      // console.log (`Meu nome é ${name} e tenho ${age} anos.`) //poder do acento agudo
 
+      // alert ("olá mundo")
+      // window.alert ("hello")
 
-        // console.log (name);
-        // console.log (typeof name);
-        // console.log (age);
-        // console.log (typeof age);
-        // console.log (active);
-        // console.log (typeof active);
-        // console.log (vote);
-        // console.log (typeof vote);
-        // console.log (contain);
-        // console.log (typeof contain);
-        
-        // console.log (name, typeof name);
-        // console.log (age, typeof age);
-        // console.log (active, typeof active);
-        // console.log (vote, typeof vote);
-        // console.log (contain, typeof contain);
+      // cometario simples, inline
+      /* tudo que está aqui dentro é um comentário e pode estar em várias linhas */
 
-        
-        // console.log (2*2);
-        // console.log (typeof 2*2);
-        // console.log ('4'+'5'); //concatenar
-        // console.log (4+5); 
+      // aula de 12/08 -------------------------------------------------------------------
+      // input - entrada de dados
 
-        // console.log ('Meu nome é ' + name + ' e tenho ' + age + ' anos.')
-        // console.log (`Meu nome é ${name} e tenho ${age} anos.`) //poder do acento agudo
-        
+      // window.prompt ();
+      // window.alert ("hello world")
+      // window.alert (name);
+      // console.log (value, typeof value);
 
-        // alert ("olá mundo")
-        // window.alert ("hello")
+      // const name = window.prompt("digite seu nome");
+      // window.alert (`Ola, ${name}! Seja bem vindo ao Code-cash`)
 
-
-        // cometario simples, inline
-        /* tudo que está aqui dentro é um comentário e pode estar em várias linhas */
-
-        // aula de 12/08 -------------------------------------------------------------------
-        // input - entrada de dados
-
-        // window.prompt ();
-        // window.alert ("hello world")
-        // window.alert (name);
-        // console.log (value, typeof value);
-        
-        // const name = window.prompt("digite seu nome");
-        // window.alert (`Ola, ${name}! Seja bem vindo ao Code-cash`)
-        
-
-        // ESTRUTURAS DE CONTROLE DE FLUXO // DECISOES!!!
-        // 1. CONDICIONAIS - if é uma palavra reservada para a condicional SE
+      // ESTRUTURAS DE CONTROLE DE FLUXO // DECISOES!!!
+      // 1. CONDICIONAIS - if é uma palavra reservada para a condicional SE
 
       //  const name = window.prompt ("Digite seu Nome:");
 
       //  if (name) {
-     //       window.alert(`Olá ${name}! Seja bem vindo ao Code Cash`);
-     //   } else {
-     //     window.alert (`Olá!`);
-    //   } 
+      //       window.alert(`Olá ${name}! Seja bem vindo ao Code Cash`);
+      //   } else {
+      //     window.alert (`Olá!`);
+      //   }
 
-    //   if (name) {
-     //       window.alert (`Ola ${name}! Seja bem vindo ao Code Cash.`)
-    //    } else if (name === '') {
-   //         window.alert (`Olá`)
-    //   } else {
-    //        window.alert (`Operação Cancelada`)
-    //   }
-//   parte com função da aula de 19/08 ----- 
+      //   if (name) {
+      //       window.alert (`Ola ${name}! Seja bem vindo ao Code Cash.`)
+      //    } else if (name === '') {
+      //         window.alert (`Olá`)
+      //   } else {
+      //        window.alert (`Operação Cancelada`)
+      //   }
+      //   parte com função da aula de 19/08 -----
 
- //    function greet (name) {
-  //    if (name) {
-  //      alert (`Ola ${name}! Seja bem vindo ao Code Cash.`)
-  //    } else if (name === '') {
-   //     (`Ola Seja bem vindo ao Code Cash.`)
-   //   }
+      //    function greet (name) {
+      //    if (name) {
+      //      alert (`Ola ${name}! Seja bem vindo ao Code Cash.`)
+      //    } else if (name === '') {
+      //     (`Ola Seja bem vindo ao Code Cash.`)
+      //   }
 
-    //  alert ('Operação cancelada')
-   //  }
+      //  alert ('Operação cancelada')
+      //  }
 
-   //  greet (name)
-  /// ===================================================== 
+      //  greet (name)
+      /// =====================================================
 
+      //   function greet (name) {
+      //     const name = window.prompt ("Digite seu Nome:");
 
-        //   function greet (name) {
-        //     const name = window.prompt ("Digite seu Nome:");
+      //   if (!isNaN (Number(name)))
+      //     return alert ('Digite um valor válido.');
 
-        //   if (!isNaN (Number(name))) 
-        //     return alert ('Digite um valor válido.');
-        
-        //  }
+      //  }
 
+      // ==========================================================
 
+      //    const age = window.prompt ("digite sua idade")
+      //    if (age >= 60) {
+      //    console.log('Você está na melhor idade.');
+      //  } else if (age >= 40) {
+      //    console.log('Você está na flor da idade.');
+      //  } else if (age >= 21) {
+      //    console.log('Você está na idade dos problemas.');
+      //  } else if (age >= 18) {
+      //    console.log('Te prepare que la vem bomba!');
+      //  } else if (age >= 14) {
+      //    console.log('Nem tudo é sobre você, querido!');
+      //  } else if (age >= 8) {
+      //    console.log('Calma, criança!');
+      //  } else {
+      //    console.log('Vida feliz!');
+      //  }
 
+      // VERIFICADOR DE TEMPERATURA //
 
+      // SE A TEMPERATURA ESTIVER ABAIXO DE 5 GRAUS, IMPRIMA FRIO INTENSO;
+      // SE A TEMPERATURA ESTIVER ENTRE 5 E 15 GRAUS, IMPRIMA CLIMA FRIO;
+      // SE A TEMPERATURA ESTIVER ACIMA DE  15 E MENOR QUE 25, IMPRIMA CLIMA AGRADAVEL
+      // SE A TEMPERATURA ESTIVER ENTRE 25 E 30 GRAUS IMPRIMA CLIMA QUENTE;
+      // SE A TEMPERATURA ESTIVER ACIMA DE 30, CALOR INTENSO.
 
+      //  const temp = window.prompt ("Digite a Temperatura")
+      //  if (temp < 5) {
+      //    console.log ('Frio intenso');
+      //   } else if (temp <= 15) {
+      //    console.log('Clima Frio');
+      //  } else if (temp < 25) {
+      //    console.log ('clima agradavel');
+      //  } else if (temp <=30) {
+      //    console.log ('clima quente');
+      //  } else {
+      //    console.log ('calor intenso')
+      //  }
 
+      // LAÇOS DE REPETIÇÃO ------------------------------------------------------------------------
 
-  // ==========================================================
-   
-    //    const age = window.prompt ("digite sua idade")
-    //    if (age >= 60) {
-    //    console.log('Você está na melhor idade.');
-    //  } else if (age >= 40) {
-    //    console.log('Você está na flor da idade.');
-    //  } else if (age >= 21) {
-    //    console.log('Você está na idade dos problemas.');
-    //  } else if (age >= 18) {
-    //    console.log('Te prepare que la vem bomba!');
-    //  } else if (age >= 14) {
-    //    console.log('Nem tudo é sobre você, querido!');
-    //  } else if (age >= 8) {
-    //    console.log('Calma, criança!');
-    //  } else {
-    //    console.log('Vida feliz!');
-    //  }
-        
-// VERIFICADOR DE TEMPERATURA //
+      // for (let i = 1; i <= 100; i = i + 1) {        // for é o inicializador ; condição ;  modificador
+      //     console.log (i);                          // se verdadeiro cai dentro do codigo
+      // }
 
-// SE A TEMPERATURA ESTIVER ABAIXO DE 5 GRAUS, IMPRIMA FRIO INTENSO;
-// SE A TEMPERATURA ESTIVER ENTRE 5 E 15 GRAUS, IMPRIMA CLIMA FRIO;
-// SE A TEMPERATURA ESTIVER ACIMA DE  15 E MENOR QUE 25, IMPRIMA CLIMA AGRADAVEL
-// SE A TEMPERATURA ESTIVER ENTRE 25 E 30 GRAUS IMPRIMA CLIMA QUENTE;
-// SE A TEMPERATURA ESTIVER ACIMA DE 30, CALOR INTENSO.
+      // console.log (5%3 === 0)        // para conhecer numeros pares e impares, o % calcula o resto da divisao
 
+      // for (let i = 1; i <=100; i = i + 1) {
+      //     if (i % 2 === 0) {
+      //         console.log (`Numero par: ${i}`);
+      //     } else {
+      //         console.log (`Numero impar ${i}`)
 
-    //  const temp = window.prompt ("Digite a Temperatura")
-    //  if (temp < 5) {
-    //    console.log ('Frio intenso');
-    //   } else if (temp <= 15) {
-    //    console.log('Clima Frio');
-    //  } else if (temp < 25) {
-    //    console.log ('clima agradavel');
-    //  } else if (temp <=30) {
-    //    console.log ('clima quente');
-    //  } else {
-    //    console.log ('calor intenso')
-    //  }
+      //     }
+      // }
 
-// LAÇOS DE REPETIÇÃO ------------------------------------------------------------------------
+      // ===================================================================
+      // verifique uma lista de numeros de 1 a 100;
+      // se o numero for divisivel por 2 imprima o numero "n-mar'
+      // se o numero for divisival por 5 imprima o numero "n - menino"
+      // se o numero for divisivel por 2 e por 5 imprima "n -marmenino"
 
-        // for (let i = 1; i <= 100; i = i + 1) {        // for é o inicializador ; condição ;  modificador
-        //     console.log (i);                          // se verdadeiro cai dentro do codigo
-        // }
-
-         // console.log (5%3 === 0)        // para conhecer numeros pares e impares, o % calcula o resto da divisao
-
-        // for (let i = 1; i <=100; i = i + 1) {
-        //     if (i % 2 === 0) {
-        //         console.log (`Numero par: ${i}`);
-        //     } else {
-        //         console.log (`Numero impar ${i}`) 
-        
-        //     }
-        // }
-
-
-        // ===================================================================
-        // verifique uma lista de numeros de 1 a 100;
-        // se o numero for divisivel por 2 imprima o numero "n-mar'
-        // se o numero for divisival por 5 imprima o numero "n - menino"
-        // se o numero for divisivel por 2 e por 5 imprima "n -marmenino"
-
-/*
+      /*
         Verifique uma lista de número de 1 a 100;
 
         - se o número for divisivel por 2, imprima "n - MAR"
@@ -191,45 +153,44 @@
       //     console.log(`${i} - MENINO`);
       //   }
       // }
-      
-// ------------------- AULA 19/08 --------------------------------
-// ------------------- FUNÇÕES  ----------------------------------
 
- //    function greet (name) {window.alert (`hello, ${name}!`);};
+      // ------------------- AULA 19/08 --------------------------------
+      // ------------------- FUNÇÕES  ----------------------------------
 
-  //   greet ('alexandre');
-  //   greet ('de oliveira');
-  //   greet ('teves')
+      //    function greet (name) {window.alert (`hello, ${name}!`);};
 
-     // -----------------------------------------
+      //   greet ('alexandre');
+      //   greet ('de oliveira');
+      //   greet ('teves')
 
-    //  function sum (n1, n2) {alert (n1 + n2)}
-     
-    //  sum (5, 3)
-    //  sum (5, '3')
-    //  sum (11, 11)
-     
-     //-------------------------------------------
+      // -----------------------------------------
 
-    // const greet = 'hello'
-    // console.log (greet);
+      //  function sum (n1, n2) {alert (n1 + n2)}
 
-    // crie uma funcao que recebe um numero e verifique se esse numero é par ou impar
+      //  sum (5, 3)
+      //  sum (5, '3')
+      //  sum (11, 11)
+
+      //-------------------------------------------
+
+      // const greet = 'hello'
+      // console.log (greet);
+
+      // crie uma funcao que recebe um numero e verifique se esse numero é par ou impar
 
       //function parse(n) {
       //  if (n <= 0) {
-       //   alert('Digite um valor maior que zero.');
+      //   alert('Digite um valor maior que zero.');
       //  } else if (n % 2 === 0) {
-       //   alert(`${n} é par.`);
+      //   alert(`${n} é par.`);
       //  } else {
       //    alert(`${n} é ímpar.`);/
       //  }
-     //}
+      //}
 
       // parse(10);
 
-        
-     // ============================================
+      // ============================================
 
       // function create (name) {
       //   const phrase = `Hello, ${name}!`;
@@ -237,7 +198,7 @@
       // }
 
       // alert (create ('Alexandre'));
-      
+
       // ===========================================
 
       // function parse (n) {
@@ -253,156 +214,139 @@
 
       // ============================================
 
-// let repeat = true;
+      // let repeat = true;
 
-//function greet() {
-    //    const name = prompt('Digite seu nome:');
+      //function greet() {
+      //    const name = prompt('Digite seu nome:');
 
-   //     if (name === '') {
-    //      return alert(
-     //       'Olá! Seja bem vindo ao Code Cash.'
-     //     );      
-     //   } else if (name === null) {
-     //     repeat = false;
+      //     if (name === '') {
+      //      return alert(
+      //       'Olá! Seja bem vindo ao Code Cash.'
+      //     );
+      //   } else if (name === null) {
+      //     repeat = false;
       //    return alert ('Operação cancelada.');
-     //   } else if (!isNaN(name)) {
+      //   } else if (!isNaN(name)) {
       //    alert('Digite um valor válido.');
       //    return greet();
-     //   }
-        
-    //    alert(`Olá, ${name}! Seja bem vindo ao Code Cash.`);
-    //  }
+      //   }
 
-     // greet();
+      //    alert(`Olá, ${name}! Seja bem vindo ao Code Cash.`);
+      //  }
 
-    //  let balance = 0
+      // greet();
 
-     
+      //  let balance = 0
 
-   //   const operations = {
-     //     check: () => {window.alert(`Saldo atual: R$ ${balance}`);},
+      //   const operations = {
+      //     check: () => {window.alert(`Saldo atual: R$ ${balance}`);},
 
-   //       deposit: () => {const deposit = Number (prompt (`Valor do depósito`));
-           
-       //     if (deposit === null) {
-       //       window.alert('Operação Cancelada.');
-       //       return;
+      //       deposit: () => {const deposit = Number (prompt (`Valor do depósito`));
+
+      //     if (deposit === null) {
+      //       window.alert('Operação Cancelada.');
+      //       return;
       //      }
 
       //      if (Number(deposit) < 1 || isNan(deposit)) {
       //        window.alert('valor inválido.');
-       //       return operation.deposit ();
-       //     }
-       //      balance = balance + deposit;},
+      //       return operation.deposit ();
+      //     }
+      //      balance = balance + deposit;},
 
+      //     cashOut: () => {const cashout = Number (prompt (`Valor de saque`));
 
-     //     cashOut: () => {const cashout = Number (prompt (`Valor de saque`));
-
-              
-
-       //       balance = balance - cashout;},
-       //   exit: () => {window.alert (`Foi um prazer atende-lo. Até logo!`);
-       //       repeat = false;},
+      //       balance = balance - cashout;},
+      //   exit: () => {window.alert (`Foi um prazer atende-lo. Até logo!`);
+      //       repeat = false;},
       //    invalid: () => {window.alert (`Operação Invalida`);}
       //   }
 
-     // while (repeat) {
+      // while (repeat) {
 
-    //    const operation = Number(prompt(`
+      //    const operation = Number(prompt(`
       //    Escolha uma opração:
-  
-       //   1. Consultar
+
+      //   1. Consultar
       //    2. Depositar
       //    3. Sacar
-       //   4. Sair
-       //   `));
+      //   4. Sair
+      //   `));
 
-
-
-       //   switch (operation) {
-       //     case 1: 
+      //   switch (operation) {
+      //     case 1:
       //        operations.check();
-       //       break;
-       //     case 2: 
-        //      operations.deposit();
-        //      break;
-        //    case 3: 
-        //      operations.cashOut();
-        //      break;
-        //    case 4: 
-        //      operations.exit();
-        //      break;
-         //   default:
-        //      operations.invalid();
-              
-        //  }
+      //       break;
+      //     case 2:
+      //      operations.deposit();
+      //      break;
+      //    case 3:
+      //      operations.cashOut();
+      //      break;
+      //    case 4:
+      //      operations.exit();
+      //      break;
+      //   default:
+      //      operations.invalid();
 
-         //================================================================================
+      //  }
 
-                  // switch (operation) {
-         //   case 1: 
-         //     window.alert(`Saldo atual: R$ ${balance}`);
-         //     break;
-         //   case 2: const deposit = Number (prompt (`Valor do depósito`));
-         //     balance = balance + deposit;
-         //     break;
-         //   case 3: const cashout = Number (prompt (`Valor de saque`));
-         //     balance = balance - cashout;
-         //     break;
-         //   case 4: window.alert (`Foi um prazer atende-lo. Até logo!`);
-         //     repeat = false;
-         //     break;
-         //   default:
-         //     window.alert (`Operação Invalida`);
-         // }
+      //================================================================================
 
-         //========================================================================
+      // switch (operation) {
+      //   case 1:
+      //     window.alert(`Saldo atual: R$ ${balance}`);
+      //     break;
+      //   case 2: const deposit = Number (prompt (`Valor do depósito`));
+      //     balance = balance + deposit;
+      //     break;
+      //   case 3: const cashout = Number (prompt (`Valor de saque`));
+      //     balance = balance - cashout;
+      //     break;
+      //   case 4: window.alert (`Foi um prazer atende-lo. Até logo!`);
+      //     repeat = false;
+      //     break;
+      //   default:
+      //     window.alert (`Operação Invalida`);
+      // }
 
-          //if (operation === 1) {
-          //  window.alert(`Saldo atual: R$ ${balance}`);
-          //} else if (operation === 4) {
-          // repeat = false;
-          // }
+      //========================================================================
 
-    //  }
+      //if (operation === 1) {
+      //  window.alert(`Saldo atual: R$ ${balance}`);
+      //} else if (operation === 4) {
+      // repeat = false;
+      // }
+
+      //  }
 
       //==================== OBJECT LITERAL =====================================
       // Um tipo de dado complexo trabalha armazendando os dados primitivos
-          // const user = { name: 'alex', age: 30, status: true }
-          // console.log (user)       // acessa todos os dados
-          // console.log (user.name); // acessa apenas o nome
-        
-
-
-
-
+      // const user = { name: 'alex', age: 30, status: true }
+      // console.log (user)       // acessa todos os dados
+      // console.log (user.name); // acessa apenas o nome
 
       // expressao de funcao
-    
 
+      //
+    </script>
 
-
-   // </script>
-
-      <script>
-
+    <script>
       let repeat = true;
-          
-      function greet() {
-        const name = prompt('Digite seu nome:');
 
-        if (name === '') {
-          return alert(
-            'Olá! Seja bem vindo ao Code Cash.'
-          ); 
+      function greet() {
+        const name = prompt("Digite seu nome:");
+
+        if (name === "") {
+          return alert("Olá! Seja bem vindo ao Code Cash.");
         } else if (name === null) {
           repeat = false;
-          return alert ('Operação cancelada.');
+          return alert("Operação cancelada.");
         } else if (!isNaN(name)) {
-          alert('Digite um valor válido.');
+          alert("Digite um valor válido.");
           return greet();
         }
-        
+
         alert(`Olá, ${name}! Seja bem vindo ao Code Cash.`);
       }
 
@@ -415,15 +359,15 @@
           window.alert(`Saldo atual: R$ ${balance}`);
         },
         deposit: () => {
-          const deposit = prompt('Valor do depósito');
+          const deposit = prompt("Valor do depósito");
 
           if (deposit === null) {
-            window.alert('Operação cancelada.');
+            window.alert("Operação cancelada.");
             return;
           }
 
           if (Number(deposit) < 1 || isNaN(deposit)) {
-            window.alert('Valor inválido.');
+            window.alert("Valor inválido.");
             return operations.deposit();
           }
 
@@ -431,15 +375,15 @@
           window.alert(`Saldo atual: R$ ${balance}`);
         },
         cashOut: () => {
-          const cashout = prompt('Valor do saque');
+          const cashout = prompt("Valor do saque");
 
           if (cashout === null) {
-            window.alert('Operação cancelada.');
+            window.alert("Operação cancelada.");
             return;
           }
 
           if (Number(cashout) < 1 || isNaN(cashout)) {
-            window.alert('Valor inválido.');
+            window.alert("Valor inválido.");
             return operations.cashout();
           }
 
@@ -447,24 +391,26 @@
           window.alert(`Saldo atual: R$ ${balance}`);
         },
         exit: () => {
-          window.alert('Foi um prazer atendê-lo. Até logo!');
+          window.alert("Foi um prazer atendê-lo. Até logo!");
           repeat = false;
         },
         invalid: () => {
-          window.alert('Operação inválida.');
-        }
-      }
+          window.alert("Operação inválida.");
+        },
+      };
 
       while (repeat) {
-        const operation = Number(prompt(`
+        const operation = Number(
+          prompt(`
           Escolha uma operação:
   
           1. Consultar
           2. Depositar
           3. Sacar
           4. Sair
-        `));
-  
+        `),
+        );
+
         switch (operation) {
           case 1:
             operations.check();
@@ -482,13 +428,12 @@
             operations.invalid();
         }
       }
-
     </script>
 
-
- /// criar a logica do sistema não sacar o valor maior que o saldo, se tentar, informar saldo insuficiente...
-</head>
-<body>
+    /// criar a logica do sistema não sacar o valor maior que o saldo, se
+    tentar, informar saldo insuficiente...
+  </head>
+  <body>
     <h1>wait</h1>
-    </body>
+  </body>
 </html>
