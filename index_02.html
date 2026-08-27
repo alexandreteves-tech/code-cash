@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula Sobre Operações e Concatenar</title>
+  </head>
+  <body>
+    <script>
+      // Há duas formas de inserir um poup-up na tela do windows, uma delas usamos o window.alert e outra forma é a abriviada, usando apenas alert.
+      window.alert("hello");
+      alert("olá mundo");
+
+      // Operadores ===============================================================================
+
+      console.log(2 * 2); //multiplicação
+      console.log(10 / 2); // divisão
+      console.log(15 - 5); // subtração
+      console.log(10 % 2); // resto da divisão
+      console.log(4 + 5); // soma
+
+      // Concatenar ================================================================================
+
+      let name = "Alexandre";
+      let sobrenome = "Teves";
+      let age = 47;
+      console.log(name + " " + sobrenome);
+      console.log("4" + "5"); //concatenar
+      console.log("Meu nome é " + name + " e tenho " + age + " anos.");
+      console.log(`Meu nome é ${name} e tenho ${age} anos.`); //poder do acento agudo
+
+      // ----- formas de usar a variável -----
+      var a = 2;
+      var b = 5;
+      var c = a + b;
+      alert(c);
+
+      // ---- outra forma de declarar as mesmas variáveis:
+      var a, b, c;
+      a = 2;
+      b = 9;
+      c = a + b;
+      alert(c);
+
+      // Variáveis var - let - const ==============================================================
+
+      // var é um tipo de variável que predominava no JS mas que atualmente está em desuso (ele não mantem constantes).
+      // let é a mais utilizada atualmente (usado desde 2015), ela não pode ser redeclarada. EX: let pessoa = "Alexandre" let pessoa = "Teves", ele apresentará um erro pois pessoa já foi declarado uma vez e não poderia ser declarado novamente. Se for inserido a mesma variável dentro de um bloco, ele assumirá o novo valor somente dentro de um bloco, fora dele manterá a primeira declaração. Ele não vai sobrescrever o primeiro let, mas pode assumir outro valor dentro de um bloco. (aceita mudanças no bloco).
+      // const é uma variável que nunca será modificada, ele é constante, nunca poderá mudar, é a mais restrita de todas.
+    </script>
+  </body>
+</html>
