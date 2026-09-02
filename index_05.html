@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script> let repeat = true;
+          
+      function greet() {
+        const name = prompt('Digite seu nome:');
+
+        if (name === '') {
+          return alert(
+            'Olá! Seja bem vindo ao Code Cash.'
+          ); 
+        } else if (name === null) {
+          repeat = false;
+          return alert ('Operação cancelada.');
+        } else if (!isNaN(name)) {
+          alert('Digite um valor válido.');
+          return greet();
+        }
+        
+        alert(`Olá, ${name}! Seja bem vindo ao Code Cash.`);
+      }
+
+      greet();
+
+      let balance = 0;
+      const statement = [];
+
+      const operations = {
+        check: () => {
+          window.alert(`Saldo atual: R$ ${balance}`);
+        },
+        deposit: () => {
+          const deposit = prompt('Valor do depósito');
+
+          if (deposit === null) {
+            window.alert('Operação cancelada.');
+            return;
+          }
+
+          if (Number(deposit) < 1 || isNaN(deposit)) {
+            window.alert('Valor inválido.');
+            return operations.deposit();
+          }
+
+          balance = balance + Number(deposit);
+          window.alert(`Saldo atual: R$ ${balance}`);
+
+          statement[statement.length] = {
+            type: 'Depositar',
+            value: Number(deposit)
+          };
+        },
+        cashOut: () => {
+          const cashout = prompt('Valor do saque');
+
+          if (cashout === null) {
+            window.alert('Operação cancelada.');
+            return;
+          }
+
+          if (Number(cashout) < 1 || isNaN(cashout)) {
+            window.alert('Valor inválido.');
+            return operations.cashOut();
+          }
+
+          balance = balance - Number(cashout);
+          window.alert(`Saldo atual: R$ ${balance}`);
+
+          statement[statement.length] = {
+            type: 'Sacar',
+            value: Number(cashout)
+          };
+        },
+        statement: () => {
+          if (statement.length === 0) {
+            return window.alert('Nenhuma transação registrada.');
+          }
+
+          let text = 'Extrato\n\n';
+
+          for (let i = 0; i < statement.length; i++) {
+            text += `${i + 1}. ${statement[i].type}: ${statement[i].value}\n`;
+          }
+
+          window.alert(text);
+        },
+        exit: () => {
+          window.alert('Foi um prazer atendê-lo. Até logo!');
+          repeat = false;
+        },
+        invalid: () => {
+          window.alert('Operação inválida.');
+        }
+      }
+
+      while (repeat) {
+        const operation = Number(prompt(`
+          Escolha uma operação:
+  
+          1. Consultar
+          2. Depositar
+          3. Sacar
+          4. Extrato
+          5. Sair
+        `));
+  
+        switch (operation) {
+          case 1:
+            operations.check();
+            break;
+          case 2:
+            operations.deposit();
+            break;
+          case 3:
+            operations.cashOut();
+            break;
+          case 4:
+            operations.statement();
+            break;
+          case 5:
+            operations.exit();
+            break;
+          default:
+            operations.invalid();
+        }
+      }
+
+      /// criar a logica do sistema não sacar o valor maior que o saldo, se
+      //tentar, informar saldo insuficiente...
+
+      /// ARRAY - LISTAS ----- AULA 02/09----------------------------------------------------
+      // ARRAY é um tipo de dado, ele tras coleções. Servem para armazenar objetos.
+      // posso armazenar listas dentro de outras listas, e outras listas...
+      // indice é igual a posição, e ela inicia do zero (0)
+
+    </script>
+</body>
+</html>

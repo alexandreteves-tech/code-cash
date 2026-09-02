@@ -309,105 +309,125 @@
     </script>
 
     <script>
-      let repeat = true;
+      // let repeat = true;
 
-      function greet() {
-        const name = prompt("Digite seu nome:");
+      // function greet() {
+      //   const name = prompt("Digite seu nome:");
 
-        if (name === "") {
-          return alert("Olá! Seja bem vindo ao Code Cash.");
-        } else if (name === null) {
-          repeat = false;
-          return alert("Operação cancelada.");
-        } else if (!isNaN(name)) {
-          alert("Digite um valor válido.");
-          return greet();
-        }
+      //   if (name === "") {
+      //     return alert("Olá! Seja bem vindo ao Code Cash.");
+      //   } else if (name === null) {
+      //     repeat = false;
+      //     return alert("Operação cancelada.");
+      //   } else if (!isNaN(name)) {
+      //     alert("Digite um valor válido.");
+      //     return greet();
+      //   }
 
-        alert(`Olá, ${name}! Seja bem vindo ao Code Cash.`);
-      }
+      //   alert(`Olá, ${name}! Seja bem vindo ao Code Cash.`);
+      // }
 
-      greet();
+      // greet();
 
-      let balance = 0;
+      // let balance = 0;
 
-      const operations = {
-        check: () => {
-          window.alert(`Saldo atual: R$ ${balance}`);
-        },
-        deposit: () => {
-          const deposit = prompt("Valor do depósito");
+      // const operations = {
+      //   check: () => {
+      //     window.alert(`Saldo atual: R$ ${balance}`);
+      //   },
+      //   deposit: () => {
+      //     const deposit = prompt("Valor do depósito");
 
-          if (deposit === null) {
-            window.alert("Operação cancelada.");
-            return;
-          }
+      //     if (deposit === null) {
+      //       window.alert("Operação cancelada.");
+      //       return;
+      //     }
 
-          if (Number(deposit) < 1 || isNaN(deposit)) {
-            window.alert("Valor inválido.");
-            return operations.deposit();
-          }
+      //     if (Number(deposit) < 1 || isNaN(deposit)) {
+      //       window.alert("Valor inválido.");
+      //       return operations.deposit();
+      //     }
 
-          balance = balance + Number(deposit);
-          window.alert(`Saldo atual: R$ ${balance}`);
-        },
-        cashOut: () => {
-          const cashout = prompt("Valor do saque");
+      //     balance = balance + Number(deposit);
+      //     window.alert(`Saldo atual: R$ ${balance}`);
+      //   },
+      //   cashOut: () => {
+      //     const cashout = prompt("Valor do saque");
 
-          if (cashout === null) {
-            window.alert("Operação cancelada.");
-            return;
-          }
+      //     if (cashout === null) {
+      //       window.alert("Operação cancelada.");
+      //       return;
+      //     }
 
-          if (Number(cashout) < 1 || isNaN(cashout)) {
-            window.alert("Valor inválido.");
-            return operations.cashout();
-          }
+      //     if (Number(cashout) < 1 || isNaN(cashout)) {
+      //       window.alert("Valor inválido.");
+      //       return operations.cashout();
+      //     }
 
-          balance = balance - Number(cashout);
-          window.alert(`Saldo atual: R$ ${balance}`);
-        },
-        exit: () => {
-          window.alert("Foi um prazer atendê-lo. Até logo!");
-          repeat = false;
-        },
-        invalid: () => {
-          window.alert("Operação inválida.");
-        },
-      };
+      //     balance = balance - Number(cashout);
+      //     window.alert(`Saldo atual: R$ ${balance}`);
+      //   },
+      //   exit: () => {
+      //     window.alert("Foi um prazer atendê-lo. Até logo!");
+      //     repeat = false;
+      //   },
+      //   invalid: () => {
+      //     window.alert("Operação inválida.");
+      //   },
+      // };
 
-      while (repeat) {
-        const operation = Number(
-          prompt(`
-          Escolha uma operação:
+      // while (repeat) {
+      //   const operation = Number(
+      //     prompt(`
+      //     Escolha uma operação:
   
-          1. Consultar
-          2. Depositar
-          3. Sacar
-          4. Sair
-        `),
-        );
+      //     1. Consultar
+      //     2. Depositar
+      //     3. Sacar
+      //     4. Sair
+      //   `),
+      //   );
 
-        switch (operation) {
-          case 1:
-            operations.check();
-            break;
-          case 2:
-            operations.deposit();
-            break;
-          case 3:
-            operations.cashOut();
-            break;
-          case 4:
-            operations.exit();
-            break;
-          default:
-            operations.invalid();
-        }
-      }
+      //   switch (operation) {
+      //     case 1:
+      //       operations.check();
+      //       break;
+      //     case 2:
+      //       operations.deposit();
+      //       break;
+      //     case 3:
+      //       operations.cashOut();
+      //       break;
+      //     case 4:
+      //       operations.exit();
+      //       break;
+      //     default:
+      //       operations.invalid();
+      //   }
+      // }
 
       /// criar a logica do sistema não sacar o valor maior que o saldo, se
       //tentar, informar saldo insuficiente...
+
+      //const list = ['apple', 'orange', 'banana'];
+      //list[2] = 'grape'
+      //console.log(list[2])
+
+      const fruits = ['Alex', 'frança', 'Larissa', 'Eduardo', 'Alexandre', 'cremosinho', 'rico'];
+      console.log(fruits.length)
+
+      for(let i = 0; i < fruits.length; i++) {
+      if (fruits[i] === 'cremosinho'){
+        console.log (`Achei o Cremosinho. Ele está na posição ${i}`);
+      } }
+    
+    
+      // inicializador
+      
+
+
+
+
     </script>
   </body>
 </html>
